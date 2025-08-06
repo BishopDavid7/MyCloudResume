@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pascal Esegemou Ekenya Fonjock - Cloud Resume</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <style>
+    :root {
+      --bg-light: #ffffff;
+      --bg-dark: #121212;
+      --text-light: #000000;
+      --text-dark: #ffffff;
+    }
+
+    [data-theme="light"] {
+      background-color: var(--bg-light);
+      color: var(--text-light);
+    }
+
+    [data-theme="dark"] {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 8px 16px;
+      cursor: pointer;
+      background: #0073bb;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .badge-carousel {
+      padding: 20px 0;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    .swiper-slide img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+  <div class="container">
+    <header>
+      <img src="https://i.postimg.cc/zfP9wKfM/pascal-2.png" alt="Pascal's Headshot" class="headshot" />
+      <div>
+        <h1>Pascal Esegemou Ekenya Fonjock</h1>
+        <p>Buea, Cameroon | 🌐 Remote-Ready</p>
+        <p>
+          📧 <a class="link" href="mailto:pekenyafonjock@uco.edu">pekenyafonjock@uco.edu</a> |
+          <a class="link" href="mailto:p.fonjock@gmail.com">p.fonjock@gmail.com</a> |
+          <a class="link" href="mailto:pascaldavid.aws@gmail.com">pascaldavid.aws@gmail.com</a><br />
+          🔗 <a class="link" href="https://www.linkedin.com/in/pascal-cloud-devops" target="_blank">LinkedIn</a> |
+          💻 <a class="link" href="https://github.com/BishopDavid7" target="_blank">GitHub</a>
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>👋 Hi, I'm Pascal Esegemou Ekenya Fonjock</h2>
+        <p>
+          I'm a <strong>Cloud Engineer</strong> with 2+ years of cloud computing experience building secure, scalable, and cost-optimized AWS solutions.
+          I specialize in <strong>DevOps automation</strong>, <strong>IaC</strong>, and <strong>CI/CD pipelines</strong>, passionate about delivering real-world value through the cloud.
+        </p>
+        <p>
+          🔧 <strong>Areas of Focus:</strong><br/>
+          - Cloud Support & Troubleshooting<br/>
+          - CI/CD Pipelines & GitOps<br/>
+          - DevOps Automation & Monitoring<br/>
+          - Infrastructure as Code (IaC)
+        </p>
+        <p>
+          🌍 <strong>Open to:</strong><br/>
+          - Entry-Level DevOps & Cloud Engineer Roles<br/>
+          - Open-source Cloud/DevOps Projects
+        </p>
+      </section>
+
+      <section>
+        <h2>🧰 Tools & Technologies</h2>
+        <div align="center">
+          <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/aws.png" height="45" />
+          <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/terraform.png" height="45" />
+          <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/docker.png" height="45" />
+          <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/github.png" height="45" />
+          <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/git.png" height="45" />
+          <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/linux.png" height="45" />
+          <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/bash.png" height="45" />
+          <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/python.png" height="45" />
+          <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/ansible.png" height="45" />
+          <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/kubernetes.png" height="45" />
+          <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/jenkins.png" height="45" />
+          <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/main/icons/jira.png" height="45" />
+        </div>
+      </section>
+
+      <section>
+        <h2>💼 Employment History</h2>
+        <div id="timeline"></div>
+        <div id="job-details"></div>
+      </section>
+
+      <section>
+        <h2>🚀 Featured Projects</h2>
+        <ul>
+          <li>🤖 <a href="https://github.com/BishopDavid7/EZEGS-AI-ChatBot" target="_blank"><strong>EZEGS-AI-ChatBot</strong></a> – Serverless AI chatbot powered by Amazon Bedrock & Lambda.</li>
+          <li>🩺 <a href="https://github.com/BishopDavid7/VitalLens-AI-App.git" target="_blank"><strong>VitalLens-AI-App</strong></a> – Health diagnostics via SageMaker + React.</li>
+          <li>🌐 <a href="https://github.com/BishopDavid7/VirtualSMSHub" target="_blank"><strong>VirtualSMSHub</strong></a> – SMS gateway with API Gateway & Lambda.</li>
+          <li>🛒 <a href="https://github.com/BishopDavid7/HafaRetails" target="_blank"><strong>HafaRetails</strong></a> – E-commerce app with Cognito & Mobile Money.</li>
+          <li>🌾 <a href="https://github.com/BishopDavid7/Agricultural-Products-App" target="_blank"><strong>Agricultural Products App</strong></a> – PWA for farmers powered by AWS backend.</li>
+          <li>🔁 <a href="https://github.com/BishopDavid7/AWS-Cloud-Projects/tree/main/AWS-High-Availability-App" target="_blank"><strong>AWS High Availability App</strong></a> – EC2 + ASG + ELB with VPC via IaC.</li>
+          <li>🧠 <a href="https://github.com/BishopDavid7/AWS-Cloud-Projects/tree/main/AWS-Image-Label-Generator" target="_blank"><strong>Image Label Generator</strong></a> – Auto-labels images using Rekognition.</li>
+          <li>🔧 <a href="https://github.com/BishopDavid7/AWS-Cloud-Projects/tree/main/jenkins-ec2-deployment" target="_blank"><strong>Jenkins EC2 Deployment</strong></a> – CI/CD via Jenkins on EC2.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>📜 Certifications & Training</h2>
+        <ul>
+          <li>AWS Cloud Practitioner – AWS Skill Builder</li>
+          <li>DevOps Foundations – Great Learning</li>
+          <li>Generative AI with AWS – AWS Training</li>
+          <li><a href="https://www.udacity.com/certificate/e/98c207dc-58b7-11f0-9764-73ed35b79ee0" target="_blank">Cloud DevOps Nanodegree – Udacity</a></li>
+        </ul>
+      </section>
+
+      <section class="badge-carousel">
+        <h2>🏆 Badges</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://www.credly.com/badges/1e90ac09-3f0e-4486-b211-7db3807aa98b/public_url"><img src="https://i.postimg.cc/VvYs3Vnc/aws-knowledge-cloud-essentials.png" /></a></div>
+            <div class="swiper-slide"><a href="https://www.credly.com/badges/1396a688-952c-4cc6-8ef9-73cb97591fab/public_url"><img src="https://i.postimg.cc/SRjcTtjX/aws-knowledge-compute.png" /></a></div>
+            <div class="swiper-slide"><a href="https://www.credly.com/badges/fd66dc8e-d593-4bee-94d5-3f52673b0f40/public_url"><img src="https://i.postimg.cc/x12sLZ4L/Getting-Started-With-Compute.png" /></a></div>
+            <div class="swiper-slide"><a href="https://www.credly.com/users/pascal-esegemou-ekenya-fonjock"><img src="https://i.postimg.cc/ZKSchy82/aws-educate-introduction-to-generative-ai.png" /></a></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>🎯 Career Objective</h2>
+        <p>
+          Eager to join a forward-thinking team as an AWS Cloud Engineer or Entry-level DevOps Engineer,
+          contributing secure, scalable AWS solutions while growing my DevOps capabilities.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>💬 “Driven by curiosity, powered by the cloud.”</p>
+      <p>© Pascal Esegemou Ekenya Fonjock</p>
+    </footer>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute("data-theme");
+      document.documentElement.setAttribute("data-theme", current === "dark" ? "light" : "dark");
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper(".swiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: { delay: 2500, disableOnInteraction: false },
+      breakpoints: {
+        768: { slidesPerView: 4 },
+        1024: { slidesPerView: 5 },
+      }
+    });
+  </script>
+</body>
+</html>
