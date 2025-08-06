@@ -23,6 +23,36 @@ This project demonstrates your cloud engineering skills by:
 
 ---
 
+          +--------------------+
+          |    CloudFront      |
+          | (CDN Distribution) |
+          +--------+-----------+
+                   |
+                   v
+          +--------+----------+
+          |    S3 Bucket       | <--- Hosts static site (HTML, CSS, JS)
+          | (Static Website)   |
+          +--------+-----------+
+                   |
+                   v
+        +----------+----------+
+        |  JavaScript (Frontend)|
+        |  script.js invokes    |
+        |  API Gateway          |
+        +----------+----------+
+                   |
+                   v
+        +----------+----------+
+        |      AWS Lambda      | <--- Updates and retrieves visitor count
+        +----------+----------+
+                   |
+                   v
+          +--------+---------+
+          |  DynamoDB Table   | <--- Stores visit count or user data
+          +------------------+
+
+
+
 ## 🛠️ Features
 
 - ✅ Static resume served via global CDN (CloudFront)
@@ -80,5 +110,21 @@ If you're managing infrastructure-as-code yourself, set up:
 ---
 
 ## ⚙️ File Structure
+
+MyCloudResume/
+├── README.md                  # Project overview and setup guide
+├── index.html                 # Main resume HTML file
+├── style.css                  # Styling for the resume webpage
+├── script.js                  # JavaScript to interact with backend (e.g., visitor count)
+├── assets/                    # (Optional) Folder for images, icons, etc.
+│   └── profile.jpg
+├── backend/
+│   ├── lambda_function.py     # AWS Lambda function to count page visits
+│   ├── requirements.txt       # Dependencies for the Lambda function
+├── cloudformation/
+│   └── template.yaml          # Optional: IaC template for provisioning resources
+└── diagrams/
+    └── architecture.png       # Architecture diagram for the Cloud Resume Challenge
+
 
 
