@@ -22,6 +22,8 @@ This project demonstrates your cloud engineering skills by:
 - **CI/CD (optional)** – Automated deployment via GitHub Actions or Lambda synchronization  
 
 ---
+Architectural Diagram: https://i.postimg.cc/8PYsvrkx/Chat-GPT-Image-Aug-6-2025-12-28-18-PM.png
+
 
           +--------------------+
           |    CloudFront      |
